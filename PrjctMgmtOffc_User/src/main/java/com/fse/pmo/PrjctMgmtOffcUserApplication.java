@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class PrjctMgmtOffcApplication {
+public class PrjctMgmtOffcUserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PrjctMgmtOffcApplication.class, args);
+		SpringApplication.run(PrjctMgmtOffcUserApplication.class, args);
 	}
 	
 	@Bean

@@ -11,6 +11,6 @@ public interface UserService {
 	public List<PmoUser> getAllUsers();
 	public PmoUser getUserById(Integer userId);
 	public Integer deleteUserById(Integer userId);
-	Integer updateProjectInUser(UpdateRequest updateRequest);
+	public Integer updateProjectInUser(UpdateRequest updateRequest);
 
 }
