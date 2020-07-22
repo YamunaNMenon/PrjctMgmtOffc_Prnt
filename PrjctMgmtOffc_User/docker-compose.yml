@@ -1,0 +1,23 @@
+version: '3'
+services:
+
+  mydb:
+    image: mysql:8
+    networks:
+      - pmoffc-network
+    environment:
+      - MYSQL_ROOT_PASSWORD=pass@word1
+      - MYSQL_DATABASE=pmoffc  
+
+  pmtool-service:
+    image: pmoffc-image
+    ports:
+      - "8081:8081"
+    networks:
+      - pmoffc-network
+    depends_on:
+      - mydb
+
+
+networks:
+  pmoffc-network:
